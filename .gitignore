@@ -1,0 +1,21 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Build
+/build/
+/out/
+
+# IntelliJ
+.idea/
+*.iml
+*.xml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# GitHub metadata (필요 없으면 무시)
+.github/
