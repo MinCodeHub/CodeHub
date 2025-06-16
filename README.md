@@ -29,8 +29,8 @@
 
 ## 🏷️ 도구 & 규칙
 
-GitHub Issues: 문제 풀이 기록
+GitHub Issues: 틀린 문제 풀이 기록
 
-Labels: X, O, 복습필요, 복습완료
+Labels: 알고리즘 구분, 복습필요, 복습완료
 
 매일 최소 1문제 이상 풀이 & 정리
