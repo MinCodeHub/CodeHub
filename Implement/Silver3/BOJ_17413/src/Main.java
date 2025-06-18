@@ -7,6 +7,7 @@ import java.util.Stack;
 public class Main {
     //단어 뒤집기2
     // <가 나타났을 때 이전에 태그가 있었다면 스택이 비어있지 않으면 꺼내야한다.
+
     static Stack<Character> stack = new Stack<>();
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
