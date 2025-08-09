@@ -5,6 +5,7 @@ import java.util.Stack;
 
 public class Main {
     static int N;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
