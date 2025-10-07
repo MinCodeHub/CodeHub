@@ -9,10 +9,11 @@ public class Main {
     static int sum;
     static int result = Integer.MIN_VALUE;
 
+//  if (sum > M) return;  //가지치기 안해줘서 시간초과 남.
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         st = new StringTokenizer(br.readLine());
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
