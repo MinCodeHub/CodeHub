@@ -10,7 +10,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
 
-        int flag = 0;
+        int answer = 0;
 
         for (int i = 1; i <= N; i++) {
             int sum = i;
@@ -21,14 +21,11 @@ public class Main {
                 tmp = tmp / 10;
             }
             if(sum == N){
-                flag = 1;
                 System.out.println(i);
                 return;
             }
         }
-        if(flag == 0){
-            System.out.println(0);
-        }
+        System.out.println(answer);
 
     }
 }
