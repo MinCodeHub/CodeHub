@@ -3,9 +3,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-
 class Node implements Comparable<Node>{
     int end;
     int cost;
@@ -27,7 +24,7 @@ public class Main {
     static ArrayList<ArrayList<Node>> graph;
 
     public static void main(String[] args) throws IOException {
-    //농부 현서
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
         st = new StringTokenizer(br.readLine());
@@ -39,6 +36,8 @@ public class Main {
         visited = new boolean[N+1];
 
         graph = new ArrayList<>();
+
+        //ArrayList 인덱스는 0부터 시작
         for(int i = 0; i<=N; i++){
             graph.add(new ArrayList<>());
         }
@@ -66,6 +65,7 @@ public class Main {
         Arrays.fill(visited,false);
 
         PriorityQueue<Node> pq = new PriorityQueue<>();
+        //시작 정점 거리 초기화 해줘야함!!! -> 안해주면 dis[cur]이 모두 INF라 갱신 불가
         dist[i] = 0;
         pq.offer(new Node(i,0));
 
