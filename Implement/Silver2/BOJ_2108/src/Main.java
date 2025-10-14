@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.stream.Collector;
 
 public class Main {
     static int N;
@@ -17,7 +18,6 @@ public class Main {
         arr = new int[N];
         int min = -4001;
         int max = 4001;
-
 
         freq = new int[8001];
 
