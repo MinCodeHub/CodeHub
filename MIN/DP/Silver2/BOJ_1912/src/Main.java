@@ -23,19 +23,24 @@ public class Main {
         }
         dp[0] = arr[0];
         max = arr[0];
-        recur(N - 1);
+
+        for(int i =1; i<N; i++){
+            dp[i] = Math.max(arr[i], dp[i-1]+arr[i]);
+            max = Math.max(dp[i], max);
+        }
+//        recur(N - 1);
         System.out.println(max);
     }
 
-    private static int recur(int N) {
-        //탐색하지 않은 인덱스라면
-        if (dp[N] == null) {
-            dp[N] = Math.max(recur(N - 1) + arr[N], arr[N]);
-
-            //해당 dp[N]과 max중 큰 값으로 max 갱신
-            max = Math.max(max, dp[N]);
-        }
-        //이미 계산 됐으면 바로 반환
-        return dp[N];
-    }
+//    private static int recur(int N) {
+//        //탐색하지 않은 인덱스라면
+//        if (dp[N] == null) {
+//            dp[N] = Math.max(recur(N - 1) + arr[N], arr[N]);
+//
+//            //해당 dp[N]과 max중 큰 값으로 max 갱신
+//            max = Math.max(max, dp[N]);
+//        }
+//        //이미 계산 됐으면 바로 반환
+//        return dp[N];
+//    }
 }
